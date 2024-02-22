@@ -43,7 +43,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="487dp"
+
+        android:layout_height="510dp"
         android:orientation="vertical">
 
         <SearchView
@@ -58,54 +59,478 @@
             android:background="@drawable/searchview_background"
             android:queryBackground="@android:color/transparent"/>
 
-        <ListView
+        <LinearLayout
+            android:id="@+id/clientsList"
             android:layout_width="match_parent"
-            android:layout_height="389dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        </ListView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/background_curved_corners"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_centerVertical="true">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/baseline_account_box_24"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:fontFamily="sans-serif"
+                                android:textSize="15sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client 1"
+                                android:fontFamily="sans-serif"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clientsList2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_curved_corners"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_centerVertical="true">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/baseline_account_box_24"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:fontFamily="sans-serif"
+                                android:textSize="15sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client 2"
+                                android:fontFamily="sans-serif"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clientsList3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_curved_corners"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_centerVertical="true">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/baseline_account_box_24"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:fontFamily="sans-serif"
+                                android:textSize="15sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client 3"
+                                android:fontFamily="sans-serif"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clientsList4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_curved_corners"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_centerVertical="true">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/baseline_account_box_24"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:fontFamily="sans-serif"
+                                android:textSize="15sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client 4"
+                                android:fontFamily="sans-serif"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clientsList5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_curved_corners"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_centerVertical="true">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/baseline_account_box_24"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:fontFamily="sans-serif"
+                                android:textSize="15sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client 5"
+                                android:fontFamily="sans-serif"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clientsList6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_curved_corners"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingHorizontal="16dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <FrameLayout
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_centerVertical="true">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/baseline_account_box_24"/>
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Address"
+                                android:fontFamily="sans-serif"
+                                android:textSize="15sp"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Client 6"
+                                android:fontFamily="sans-serif"
+                                android:textSize="20sp"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_add_box_24">
+
+        </ImageView>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
         android:orientation="vertical">
 
         <ImageView
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:src="@drawable/baseline_auto_awesome_mosaic_24"/>
+
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="-55dp"
+            android:src="@drawable/baseline_account_box_24"/>
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="-55dp"
+            android:src="@drawable/baseline_assessment_24"/>
+
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="-55dp"
+            android:src="@drawable/baseline_credit_card_24"/>
+
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginEnd="20dp"
-            android:src="@drawable/baseline_add_box_24">
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="18dp"
+            android:text="Deliveries"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
-        </ImageView>
-
-        <FrameLayout
-            android:id="@+id/frame_layout"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constrainStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </FrameLayout>
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            app:layout_constrainStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:menu="@menu/bottom_navbar">
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="129dp"
+            android:layout_marginTop="-20dp"
+            android:text="Clients"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="226dp"
+            android:layout_marginTop="-20dp"
+            android:text="Analytics"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginStart="318dp"
+            android:layout_marginTop="-20dp"
+            android:text="Transactions"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
 
     </LinearLayout>
-
-</LinearLayout>
